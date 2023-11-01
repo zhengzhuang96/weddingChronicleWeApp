@@ -2,7 +2,7 @@
   "miniprogramRoot": "./dist",
   "projectname": "weddingChronicleWeApp",
   "description": "郑先生杨女士",
-  "appid": "touristappid",
+  "appid": "wx2e2ed11a39284f9f",
   "setting": {
     "urlCheck": true,
     "es6": false,
