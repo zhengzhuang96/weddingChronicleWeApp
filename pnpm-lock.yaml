@@ -8,6 +8,9 @@ dependencies:
   '@babel/runtime':
     specifier: ^7.21.5
     version: 7.21.5
+  '@base/tracking-miniprogram':
+    specifier: ^0.0.2
+    version: 0.0.2
   '@tarojs/components':
     specifier: 3.6.18
     version: 3.6.18(@types/react@18.0.0)(postcss@8.4.18)(react@18.0.0)
@@ -2580,6 +2583,10 @@ packages:
       '@babel/helper-string-parser': 7.22.5
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
+
+  /@base/tracking-miniprogram@0.0.2:
+    resolution: {integrity: sha512-LA2oRNkIPWwWQxaDNjnUTRTxlt80dAMLYyFvyHoYhVRwSv8VKPG160PqpGXZO+Y+mcSQTYH3Df1jaLZYSiteOQ==}
+    dev: false
 
   /@bcoe/v8-coverage@0.2.3:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}

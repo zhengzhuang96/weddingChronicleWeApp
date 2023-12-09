@@ -37,6 +37,7 @@
   "author": "",
   "dependencies": {
     "@babel/runtime": "^7.21.5",
+    "@base/tracking-miniprogram": "^0.0.2",
     "@tarojs/components": "3.6.18",
     "@tarojs/helper": "3.6.18",
     "@tarojs/plugin-framework-react": "3.6.18",
