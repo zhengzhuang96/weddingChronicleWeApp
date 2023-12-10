@@ -2,6 +2,10 @@
   width: 90%;
   margin: 20px auto;
 
+  .components-page {
+    width: 680px;
+  }
+
   .index-header {
     display: flex;
     flex-direction: row;
@@ -52,6 +56,44 @@
     }
   }
 
+  .index-banner-5 {
+    width: 100%;
+    height: 620px;
+    margin: 60px auto;
+    position: relative;
+
+    .index-banner-5-me {
+      width: 300px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .index-banner-5-1-me {
+      width: 300px;
+      height: 100%;
+      position: absolute;
+      top: 260px;
+      left: 200px;
+      box-shadow: 4px 4px 58px #888;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .index-banner-5-2-me {
+      width: 300px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 400px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+
   .index-banner-2 {
     display: flex;
     flex-direction: row;
@@ -61,7 +103,7 @@
 
     .index-banner-box {
       width: 300px;
-      height: 400px;
+      // height: 400px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -76,8 +118,15 @@
 
       .index-banner-2-title {
         font-size: 35px;
-        margin-top: 20px;
+        margin-bottom: 20px;
         display: flex;
+      }
+
+      .index-banner-2-des {
+        font-size: 25px;
+        display: flex;
+        line-height: 60px;
+        color: rgb(84, 84, 84);
       }
     }
   }
@@ -93,6 +142,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 60px;
+
+    .head-title-two {
+      font-size: 40px;
+      font-style: italic;
+      margin-top: 50px;
+    }
+
+    .head-title-two-en {
+      font-size: 40px;
+      margin-bottom: 30px;
+      font-style: italic;
+      color: #cda02e;
+    }
+
+    .head-des-en {
+      color: rgb(84, 84, 84);
+      line-height: 80px;
+      font-size: 26px;
+    }
 
     .head-title {
       font-size: 40px;
@@ -102,15 +171,34 @@
 
     .head-des {
       color: rgb(84, 84, 84);
-      line-height: 50px;
-      font-size: 35px;
+      line-height: 80px;
+      font-size: 30px;
+    }
+
+    .head-xi {
+      color: rgb(188, 36, 36);
+      font-size: 100px;
+      font-weight: bold;
+      margin-top: 80px;
     }
 
     .head-des-2 {
       line-height: 50px;
-      font-size: 38px;
+      font-size: 30px;
       color: rgb(84, 84, 84);
       line-height: 60px;
+    }
+
+    .head-des-tip {
+      font-size: 25px;
+      color: rgb(84, 84, 84);
+      font-style: italic;
+      margin-top: 30px;
+    }
+
+    .head-des-location {
+      font-size: 25px;
+      color: rgb(84, 84, 84);
     }
 
     .head-des-title {
@@ -122,7 +210,80 @@
     }
 
     .map {
-      margin: 30px auto;
+      margin: 20px auto;
+    }
+  }
+
+  .index-ye-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    .index-left-img {
+      width: 305px;
+    }
+
+    .index-ye {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 455px;
+
+      .index-ye-img {
+        width: 330px;
+      }
+    }
+  }
+
+  .index-right-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 120px 0;
+
+    .head-des {
+      color: rgb(84, 84, 84);
+      line-height: 80px;
+      font-size: 30px;
+    }
+
+    .head-des-en {
+      color: rgb(84, 84, 84);
+      line-height: 80px;
+      font-size: 26px;
+    }
+  }
+
+  .index-zhu-box {
+    .index-zhu-img {
+      width: 680px;
+      height: 1000px;
+    }
+  }
+
+
+  .index-left-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 120px 0;
+
+    .head-des {
+      color: rgb(84, 84, 84);
+      line-height: 80px;
+      font-size: 30px;
+    }
+  }
+
+  .index-heng {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .index-heng-me {
+      width: 690px;
     }
   }
 
@@ -130,11 +291,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin-bottom: 100px;
 
     .head-des-title {
       margin-bottom: 10px;
-      font-size: 45px;
+      font-size: 40px;
       font-weight: bold;
       color: rgb(84, 84, 84);
     }
@@ -144,10 +305,5 @@
       height: 100px;
     }
 
-    .index-showtime-img {
-      width: 100%;
-      height: 500px;
-      margin: 20px 0;
-    }
   }
 }

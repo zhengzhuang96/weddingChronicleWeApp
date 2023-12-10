@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2023-11-01 23:28:38
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2023-11-01 23:34:59
+ * @LastEditTime: 2023-12-10 19:38:23
  * @Description:
  */
 import type { UserConfigExport } from "@tarojs/cli";
@@ -26,10 +26,10 @@ export default {
             sourcePath: "dist",
             outputPath: "/mnt/e/github/weddingChronicleWeApp",
           },
-          {
-            sourcePath: "cloud",
-            outputPath: "/mnt/e/github/weddingChronicleWeApp/cloud",
-          },
+          // {
+          //   sourcePath: "cloud",
+          //   outputPath: "/mnt/e/github/weddingChronicleWeApp/cloud",
+          // },
         ],
       },
     ],

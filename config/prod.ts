@@ -1,3 +1,10 @@
+/*
+ * @Author: {zhengzhuang}
+ * @Date: 2023-11-01 23:28:38
+ * @LastEditors: {zhengzhuang}
+ * @LastEditTime: 2023-12-09 16:48:59
+ * @Description:
+ */
 import type { UserConfigExport } from "@tarojs/cli";
 
 export default {
@@ -29,5 +36,22 @@ export default {
     //       postProcess: (context) => ({ ...context, outputPath: path.join(staticDir, 'index.html') })
     //     }))
     // }
-  }
-} satisfies UserConfigExport
+  },
+  plugins: [
+    [
+      "taro-plugin-sync-in-wsl",
+      {
+        weapp: [
+          {
+            sourcePath: "dist",
+            outputPath: "/mnt/e/github/weddingChronicleWeApp",
+          },
+          {
+            sourcePath: "cloud",
+            outputPath: "/mnt/e/github/weddingChronicleWeApp/cloud",
+          },
+        ],
+      },
+    ],
+  ],
+} satisfies UserConfigExport;
