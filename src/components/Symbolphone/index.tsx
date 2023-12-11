@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2023-11-01 23:28:38
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2023-12-11 10:38:27
+ * @LastEditTime: 2023-12-11 22:01:09
  * @Description:
  */
 import {
@@ -32,12 +32,13 @@ function Index(props: any, ref: any) {
   let timeInterval = useRef<any>();
   let innerAudioContext = useRef<any>();
 
-  // 打开弹窗
   useImperativeHandle(ref, () => ({
-    stopRotateImage: (newVal: boolean) => {
-      console.log(ref, newVal);
-      // setVisible(true);
+    rotationState,
+    stopRotateImage: () => {
       stopRotateImage();
+    },
+    rotateImage: () => {
+      rotateImage();
     },
   }));
 
@@ -90,7 +91,7 @@ function Index(props: any, ref: any) {
   // });
 
   const rotateImage = () => {
-    // props.onChange(true);
+    props.onChange(true);
     setRotationState(true);
     innerAudioContext.current.pause();
     innerAudioContext.current.play();
@@ -118,11 +119,11 @@ function Index(props: any, ref: any) {
 
   return (
     <View
-      className="symbolphonetic-box"
+      className='symbolphonetic-box'
       onClick={rotationState ? stopRotateImage : rotateImage}
       animation={rotationAnim}
     >
-      <Image src={symbolphonetic} className="symbolphonetic-svg" />
+      <Image src={symbolphonetic} className='symbolphonetic-svg' />
     </View>
   );
 }
